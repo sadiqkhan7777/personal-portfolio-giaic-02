@@ -1,4 +1,4 @@
-import './globals.css';
+import Link from 'next/link';  // Import Link from next/link
 
 export const metadata = {
   title: 'My Portfolio',
@@ -19,19 +19,19 @@ export default function RootLayout({
             <h1 className="text-2xl font-bold">My Portfolio</h1>
             <ul className="flex gap-6 text-sm font-medium">
               <li>
-                <a href="/" className="hover:underline">
+                <Link href="/" className="hover:underline"> {/* Replaced <a> with <Link> */}
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <Link href="/about" className="hover:underline"> {/* Replaced <a> with <Link> */}
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:underline">
+                <Link href="/contact" className="hover:underline"> {/* Replaced <a> with <Link> */}
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
